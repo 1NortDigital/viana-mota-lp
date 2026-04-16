@@ -10,11 +10,14 @@
 :root{--primary:#198fb1;--primary-dark:#14738f;--bg:#ffffff;--bg2:#f5f5f5;--bg3:#efeeee;--text:#404041;--text-light:#666666;--text-muted:#888888;--border:#e0e0e0;--white:#ffffff}
 body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
 
-/* TOPBAR */
-.topbar{background:var(--white);padding:10px 0;border-top:5px solid var(--primary);font-size:13px;color:var(--text-muted);border-bottom:1px solid var(--border)}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.topbar a{color:var(--primary);text-decoration:none;font-weight:600}
-.topbar a:hover{text-decoration:underline}
+/* HEADER */
+.header{background:var(--white);padding:14px 0;border-top:5px solid var(--primary);border-bottom:1px solid var(--border)}
+.header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.header-logo img{height:50px;display:block}
+.header-info{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--text-muted);flex-wrap:wrap}
+.header-info a{color:var(--primary);text-decoration:none;font-weight:600}
+.header-info a:hover{text-decoration:underline}
+.header-info span{display:flex;align-items:center;gap:4px}
 
 .container{max-width:1100px;margin:0 auto;padding:0 24px}
 
@@ -143,7 +146,8 @@ footer{background:#2b2b2b;padding:40px 0 20px}
 }
 @media(max-width:600px){
 .hero-text h1{font-size:30px}
-.topbar .container{flex-direction:column;text-align:center}
+.header .container{flex-direction:column;text-align:center}
+.header-info{justify-content:center}
 .numeros-grid{grid-template-columns:1fr 1fr}
 .numero-item h3{font-size:32px}
 }
@@ -151,13 +155,19 @@ footer{background:#2b2b2b;padding:40px 0 20px}
 </head>
 <body>
 
-<!-- TOPBAR -->
-<div class="topbar">
+<!-- HEADER -->
+<header class="header">
 <div class="container">
-<span>Viana & Mota Sociedade de Advogados | OAB/SP</span>
-<span><a href="tel:11926492278">(11) 92649-2278</a> | <a href="mailto:contato@vianaemota.com.br">contato@vianaemota.com.br</a></span>
+<div class="header-logo">
+<img src="logo-vianaemota.png" alt="Viana & Mota Sociedade de Advogados">
+</div>
+<div class="header-info">
+<span><a href="tel:1132943239">(11) 3294-3239</a></span>
+<span><a href="tel:11926492278">(11) 92649-2278</a></span>
+<span><a href="mailto:contato@vianaemota.com.br">contato@vianaemota.com.br</a></span>
 </div>
 </div>
+</header>
 
 <!-- HERO -->
 <section class="hero">
@@ -383,7 +393,7 @@ footer{background:#2b2b2b;padding:40px 0 20px}
 <p>Entre em contato agora e receba uma análise gratuita do seu caso por um especialista em Direito Trabalhista.</p>
 <div class="btns">
 <a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consulta%20trabalhista" class="btn">Chamar no WhatsApp</a>
-<a href="tel:11926492278" class="btn btn-outline">Ligar Agora</a>
+<a href="tel:1132943239" class="btn btn-outline">Ligar Agora</a>
 </div>
 </section>
 
@@ -406,6 +416,7 @@ footer{background:#2b2b2b;padding:40px 0 20px}
 </div>
 <div class="footer-col">
 <h4>Contato</h4>
+<p>&#128222; (11) 3294-3239</p>
 <p>&#128241; (11) 92649-2278</p>
 <p>&#9993; contato@vianaemota.com.br</p>
 <a href="https://www.google.com/maps/place/Av.+Ver.+Jos%C3%A9+Diniz,+3720+-+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+04604-007" target="_blank">&#128205; Av. Vereador José Diniz, 3720, Conj. 905 — São Paulo-SP</a>
