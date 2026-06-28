@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acidente de Trabalho e Afastamento pelo INSS | Viana & Mota Advogados</title>
+<meta name="description" content="Sofreu acidente de trabalho? Está afastado pelo INSS? Garantimos indenização, estabilidade e todos os benefícios que você tem direito. Consulta gratuita.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#198fb1;--primary-dark:#14738f;--bg:#ffffff;--bg2:#f5f5f5;--bg3:#efeeee;--text:#404041;--text-light:#666666;--text-muted:#888888;--border:#e0e0e0;--white:#ffffff}
+body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+
+.header{background:var(--white);padding:14px 0;border-top:5px solid var(--primary);border-bottom:1px solid var(--border)}
+.header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.header-logo img{height:95px;display:block}
+.header-info{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--text-muted);flex-wrap:wrap}
+.header-info a{color:var(--primary);text-decoration:none;font-weight:600}
+.header-info a:hover{text-decoration:underline}
+.header-info span{display:flex;align-items:center;gap:4px}
+
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+.hero{background:linear-gradient(135deg,#f8fbfc 0%,#eaf5f8 50%,#f0f8fa 100%);padding:80px 0 70px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,transparent 0%,rgba(25,143,177,0.06) 100%)}
+.hero .container{display:flex;align-items:center;gap:60px}
+.hero-text{flex:1}
+.hero-text .tag{display:inline-block;background:rgba(25,143,177,0.12);color:var(--primary);padding:6px 16px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:20px;letter-spacing:1px;text-transform:uppercase}
+.hero-text h1{font-size:42px;line-height:1.2;color:var(--text);margin-bottom:18px;font-weight:700}
+.hero-text h1 span{color:var(--primary)}
+.hero-text p{font-size:16px;color:var(--text-light);line-height:1.7;margin-bottom:30px;max-width:520px}
+.hero-photo{width:340px;height:420px;border-radius:16px;background:linear-gradient(135deg,#e8f4f8,#d5edf4);border:2px solid rgba(25,143,177,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;overflow:hidden}
+.hero-photo::after{content:'Foto do Advogado';color:var(--text-muted);font-size:14px;font-weight:500}
+.btn{display:inline-block;background:var(--primary);color:var(--white);padding:16px 36px;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:all .3s;border:none;cursor:pointer}
+.btn:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(25,143,177,0.25)}
+.btn-outline{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+.btn-outline:hover{background:var(--primary);color:var(--white)}
+
+.badges{background:var(--primary);padding:50px 0;border:none}
+.badges-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.badge-item{text-align:center;padding:24px 16px}
+.badge-icon{font-size:36px;margin-bottom:12px}
+.badge-item h4{font-size:16px;color:var(--white);margin-bottom:6px;font-weight:700}
+.badge-item p{font-size:13px;color:rgba(255,255,255,0.8);line-height:1.5}
+
+.problemas{padding:80px 0;background:var(--bg2)}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-size:34px;color:var(--text);margin-bottom:12px;font-weight:700}
+.section-title h2 span{color:var(--primary)}
+.section-title p{font-size:16px;color:var(--text-muted);max-width:600px;margin:0 auto}
+.problems-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.problem-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:30px 24px;transition:all .3s}
+.problem-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.problem-card .icon{width:48px;height:48px;background:rgba(25,143,177,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.problem-card h3{font-size:18px;color:var(--text);margin-bottom:10px;font-weight:700}
+.problem-card p{font-size:14px;color:var(--text-light);line-height:1.7}
+
+.numeros{padding:60px 0;background:var(--primary);border:none}
+.numeros-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.numero-item h3{font-size:42px;color:var(--white);font-weight:700;margin-bottom:6px}
+.numero-item p{font-size:14px;color:rgba(255,255,255,0.85);font-weight:600}
+
+.cta-mid{padding:70px 0;background:var(--bg2);text-align:center}
+.cta-mid h2{font-size:30px;color:var(--text);margin-bottom:14px;font-weight:700}
+.cta-mid p{font-size:16px;color:var(--text-light);margin-bottom:28px;max-width:540px;margin-left:auto;margin-right:auto}
+
+.sobre{padding:80px 0;background:var(--white)}
+.sobre .container{display:flex;align-items:center;gap:60px}
+.sobre-photo{width:320px;height:380px;border-radius:12px;background:linear-gradient(135deg,#e8f4f8,#d5edf4);border:2px solid rgba(25,143,177,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sobre-photo::after{content:'Foto da Equipe';color:var(--text-muted);font-size:14px}
+.sobre-text h2{font-size:32px;color:var(--text);margin-bottom:16px;font-weight:700}
+.sobre-text h2 span{color:var(--primary)}
+.sobre-text p{font-size:15px;color:var(--text-light);line-height:1.8;margin-bottom:14px}
+
+.depoimentos{padding:80px 0;background:var(--bg2)}
+.depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.depo-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px 24px}
+.depo-stars{color:#f5a623;font-size:16px;margin-bottom:12px}
+.depo-card p{font-size:14px;color:var(--text-light);line-height:1.7;margin-bottom:16px;font-style:italic}
+.depo-card .nome{font-size:14px;color:var(--text);font-weight:700}
+.depo-card .caso{font-size:12px;color:var(--primary);font-weight:600}
+
+.faq{padding:80px 0;background:var(--white)}
+.faq-list{max-width:740px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border);padding:22px 0}
+.faq-item h4{font-size:17px;color:var(--text);margin-bottom:10px;cursor:pointer;font-weight:700}
+.faq-item p{font-size:14px;color:var(--text-light);line-height:1.7}
+
+.localizacao{padding:80px 0;background:var(--bg2)}
+.localizacao .container{display:flex;gap:50px;align-items:stretch}
+.loc-info{flex:1;display:flex;flex-direction:column;justify-content:center}
+.loc-info h2{font-size:32px;color:var(--text);margin-bottom:24px;font-weight:700}
+.loc-info h2 span{color:var(--primary)}
+.loc-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px}
+.loc-item .loc-icon{width:44px;height:44px;background:rgba(25,143,177,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.loc-item .loc-text p{font-size:15px;color:var(--text-light);line-height:1.6}
+.loc-item .loc-text p strong{color:var(--text);font-weight:700}
+.loc-map{flex:1.2;border-radius:12px;overflow:hidden;border:1px solid var(--border);min-height:380px}
+.loc-map iframe{width:100%;height:100%;min-height:380px;border:0}
+
+.cta-final{padding:80px 0;background:var(--primary);text-align:center;border:none}
+.cta-final h2{font-size:32px;color:var(--white);margin-bottom:14px;font-weight:700}
+.cta-final p{font-size:16px;color:rgba(255,255,255,0.85);margin-bottom:30px;max-width:540px;margin-left:auto;margin-right:auto}
+.cta-final .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cta-final .btn{background:var(--white);color:var(--primary)}
+.cta-final .btn:hover{background:#f0f0f0;color:var(--primary-dark)}
+.cta-final .btn-outline{background:transparent;border:2px solid var(--white);color:var(--white)}
+.cta-final .btn-outline:hover{background:var(--white);color:var(--primary)}
+
+footer{background:#2b2b2b;padding:40px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:30px}
+.footer-col h4{font-size:15px;color:var(--white);margin-bottom:14px;font-weight:700}
+.footer-col p,.footer-col a{font-size:13px;color:#aaaaaa;line-height:2;text-decoration:none;display:block}
+.footer-col a:hover{color:var(--primary)}
+.footer-bottom{text-align:center;border-top:1px solid #444;padding-top:18px;font-size:12px;color:#777}
+
+.wpp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;color:white;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);z-index:999;transition:transform .3s}
+.wpp-float:hover{transform:scale(1.1)}
+
+@media(max-width:900px){
+.hero .container{flex-direction:column;text-align:center}
+.hero-text p{margin:0 auto 30px}
+.hero-photo{width:280px;height:340px}
+.badges-grid{grid-template-columns:repeat(2,1fr)}
+.problems-grid{grid-template-columns:1fr}
+.numeros-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+.sobre .container{flex-direction:column;text-align:center}
+.depo-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.localizacao .container{flex-direction:column}
+.loc-map{min-height:300px}
+.cta-final .btns{flex-direction:column;align-items:center}
+}
+@media(max-width:600px){
+.hero-text h1{font-size:30px}
+.header .container{flex-direction:column;text-align:center}
+.header-info{justify-content:center}
+.numeros-grid{grid-template-columns:1fr 1fr}
+.numero-item h3{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="container">
+<div class="header-logo">
+<img src="../logo-vianaemota.png" alt="Viana & Mota Sociedade de Advogados">
+</div>
+<div class="header-info">
+<span><a href="tel:1132943230">(11) 3294-3230</a></span>
+<span><a href="tel:11926492278">(11) 92649-2278</a></span>
+<span><a href="mailto:contato@vianaemota.com.br">contato@vianaemota.com.br</a></span>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container"><div class="hero-text">
+<span class="tag">Acidente de Trabalho • Afastamento INSS</span>
+<h1>Sofreu acidente? <span>Ficou afastado pelo INSS?</span></h1>
+<p>Você tem direito a indenização, estabilidade de 12 meses no emprego, auxílio-doença acidentário (B91), aposentadoria por invalidez e ressarcimento de despesas médicas. Não deixe a empresa nem o INSS te lesarem.</p>
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20sofri%20acidente%20de%20trabalho%20e%20quero%20uma%20consulta" class="btn">Falar com Advogado Agora</a>
+</div>
+<div class="hero-photo"></div></div>
+</section>
+
+<section class="badges">
+<div class="container"><div class="badges-grid">
+<div class="badge-item"><div class="badge-icon">&#9878;</div><h4>+15 Anos de Experiência</h4><p>Atuação sólida em casos de acidente de trabalho</p></div>
+<div class="badge-item"><div class="badge-icon">&#128176;</div><h4>Sem Custo Inicial</h4><p>Você só paga se ganharmos a sua causa</p></div>
+<div class="badge-item"><div class="badge-icon">&#128200;</div><h4>+2.000 Casos</h4><p>Trabalhadores acidentados defendidos com sucesso</p></div>
+<div class="badge-item"><div class="badge-icon">&#127973;</div><h4>Especialistas em INSS</h4><p>Conhecemos os trâmites do auxílio acidentário</p></div>
+</div></div>
+</section>
+
+<section class="problemas">
+<div class="container">
+<div class="section-title">
+<h2>Você pode ter direito a <span>tudo isso</span></h2>
+<p>Sofreu acidente no trabalho ou está afastado pelo INSS? Conheça os benefícios e indenizações que a lei garante a você.</p>
+</div>
+<div class="problems-grid">
+<div class="problem-card"><div class="icon">&#127973;</div><h3>Auxílio Acidentário (B91)</h3><p>Se ficou afastado por mais de 15 dias por acidente, a empresa não pode te demitir. O INSS deve pagar o B91, não o B31 comum.</p></div>
+<div class="problem-card"><div class="icon">&#128274;</div><h3>Estabilidade de 12 Meses</h3><p>Após retornar do afastamento por acidente, você tem 12 meses de estabilidade no emprego. Foi demitido nesse período? Pode ser reintegrado.</p></div>
+<div class="problem-card"><div class="icon">&#128181;</div><h3>Indenização por Danos</h3><p>Danos morais, estéticos, materiais e lucros cessantes. A empresa que descumpriu normas de segurança deve te indenizar.</p></div>
+<div class="problem-card"><div class="icon">&#129694;</div><h3>Aposentadoria por Invalidez</h3><p>Sequelas permanentes que te impedem de trabalhar? Você pode ter direito à aposentadoria por invalidez acidentária.</p></div>
+<div class="problem-card"><div class="icon">&#128203;</div><h3>Emissão da CAT</h3><p>A empresa se recusou a emitir a Comunicação de Acidente de Trabalho? Nós forçamos a emissão e garantimos seu enquadramento correto.</p></div>
+<div class="problem-card"><div class="icon">&#128181;</div><h3>Pensão Vitalícia</h3><p>Em casos de redução permanente da capacidade de trabalho, você pode ter direito a pensão mensal vitalícia paga pela empresa.</p></div>
+</div>
+</div>
+</section>
+
+<section class="numeros">
+<div class="container"><div class="numeros-grid">
+<div class="numero-item"><h3>+2.000</h3><p>Trabalhadores Atendidos</p></div>
+<div class="numero-item"><h3>95%</h3><p>Taxa de Êxito</p></div>
+<div class="numero-item"><h3>+15</h3><p>Anos de Atuação</p></div>
+<div class="numero-item"><h3>R$ 50M+</h3><p>Recuperados para Clientes</p></div>
+</div></div>
+</section>
+
+<section class="cta-mid">
+<h2>Cada dia parado pode custar caro.</h2>
+<p>Prazo para reclamar acidente de trabalho é curto. Não espere a empresa "resolver" — ela não vai. Fale com um especialista agora.</p>
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20sofri%20acidente%20de%20trabalho%20e%20quero%20uma%20consulta" class="btn">Consulta Gratuita pelo WhatsApp</a>
+</section>
+
+<section class="sobre">
+<div class="container">
+<div class="sobre-photo"></div>
+<div class="sobre-text">
+<h2>Sobre a <span>Viana & Mota</span></h2>
+<p>A Viana & Mota Sociedade de Advogados é um escritório com mais de 15 anos de experiência dedicados ao Direito do Trabalho em São Paulo, com forte atuação em acidente de trabalho e benefícios do INSS.</p>
+<p>Nossa missão é garantir que cada trabalhador acidentado receba a indenização, a estabilidade e os benefícios previdenciários que a lei assegura, com atendimento humanizado e total transparência sobre o caso.</p>
+<p>Atuamos contra grandes empresas, seguradoras e contra a burocracia do INSS, sempre com o objetivo de devolver dignidade a quem sofreu um acidente trabalhando.</p>
+</div>
+</div>
+</section>
+
+<section class="depoimentos">
+<div class="container">
+<div class="section-title">
+<h2>O que nossos <span>clientes dizem</span></h2>
+<p>Trabalhadores que conquistaram seus direitos com a gente</p>
+</div>
+<div class="depo-grid">
+<div class="depo-card"><div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Caí de um andaime e fiquei 8 meses afastado. A empresa não emitiu a CAT e o INSS me deu B31. O escritório reverteu pra B91 e ainda consegui indenização."</p><div class="nome">José R.</div><div class="caso">Acidente em Obra</div></div>
+<div class="depo-card"><div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Tive lesão por esforço repetitivo, fui afastado e quando voltei me demitiram. Eles provaram a estabilidade e fui reintegrado com salários atrasados."</p><div class="nome">Marcos S.</div><div class="caso">LER/DORT</div></div>
+<div class="depo-card"><div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Perdi parte do movimento da mão num acidente. Eles conseguiram aposentadoria por invalidez e indenização da empresa. Atendimento direto e sem enrolação."</p><div class="nome">Antônio P.</div><div class="caso">Sequela Permanente</div></div>
+</div>
+</div>
+</section>
+
+<section class="localizacao">
+<div class="container">
+<div class="loc-info">
+<h2>Nossa <span>Localização</span></h2>
+<div class="loc-item"><div class="loc-icon">&#128205;</div><div class="loc-text"><p><strong>Endereço</strong><br><a href="https://www.google.com/maps/place/Av.+Ver.+Jos%C3%A9+Diniz,+3720+-+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+04604-007" target="_blank" style="color:var(--primary);text-decoration:none;display:inline">Av. Vereador José Diniz, 3720, Conj. 905<br>São Paulo-SP | CEP 04604-007</a></p></div></div>
+<div class="loc-item"><div class="loc-icon">&#128222;</div><div class="loc-text"><p><strong>Telefone</strong><br><a href="tel:1132943230" style="color:var(--primary);text-decoration:none;display:inline">(11) 3294-3230</a></p></div></div>
+<div class="loc-item"><div class="loc-icon">&#128241;</div><div class="loc-text"><p><strong>Celular</strong><br><a href="tel:11926492278" style="color:var(--primary);text-decoration:none;display:inline">(11) 92649-2278</a></p></div></div>
+<div class="loc-item"><div class="loc-icon">&#9993;</div><div class="loc-text"><p><strong>E-mail</strong><br><a href="mailto:contato@vianaemota.com.br" style="color:var(--primary);text-decoration:none;display:inline">contato@vianaemota.com.br</a></p></div></div>
+</div>
+<div class="loc-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.674921361813!2d-46.67553308538256!3d-23.615988769496152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50a1038509bd%3A0x6f668087d411e354!2sAv.%20Ver.%20Jos%C3%A9%20Diniz%2C%203720%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004604-007!5e0!3m2!1spt-BR!2sbr!4v1567190784645!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe></div>
+</div>
+</section>
+
+<section class="faq">
+<div class="container">
+<div class="section-title"><h2>Perguntas <span>Frequentes</span></h2></div>
+<div class="faq-list">
+<div class="faq-item"><h4>Preciso pagar algo para iniciar o processo?</h4><p>Não. Trabalhamos com honorários condicionados ao êxito. Você só paga quando ganhamos a sua causa.</p></div>
+<div class="faq-item"><h4>Qual a diferença entre B31 e B91?</h4><p>B31 é auxílio-doença comum (sem estabilidade). B91 é auxílio acidentário — gera 12 meses de estabilidade após retorno e mantém depósito de FGTS durante o afastamento. Muita gente recebe B31 quando deveria ser B91.</p></div>
+<div class="faq-item"><h4>A empresa não emitiu a CAT. E agora?</h4><p>A CAT pode ser emitida pelo próprio trabalhador, pelo sindicato, pelo médico ou por qualquer autoridade pública. Nós formalizamos a emissão e garantimos o enquadramento correto.</p></div>
+<div class="faq-item"><h4>Tenho direito a indenização da empresa?</h4><p>Sim, se houve descumprimento de normas de segurança, falta de EPI, treinamento inadequado ou ambiente insalubre. Indenização por danos morais, materiais, estéticos e lucros cessantes.</p></div>
+<div class="faq-item"><h4>Qual o prazo para entrar com ação?</h4><p>2 anos após a saída da empresa, podendo cobrar os últimos 5 anos. Para reverter B31 em B91 ou conseguir o benefício correto no INSS, o prazo é ainda mais sensível — não deixe para depois.</p></div>
+<div class="faq-item"><h4>Vocês atendem em toda São Paulo?</h4><p>Sim. Atendimento presencial em Santo Amaro e online para todo o estado de SP.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta-final">
+<h2>Vamos garantir seus direitos.</h2>
+<p>Análise gratuita do seu caso por um especialista em acidente de trabalho e benefícios do INSS. Sem compromisso.</p>
+<div class="btns">
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20sofri%20acidente%20de%20trabalho%20e%20quero%20uma%20consulta" class="btn">Chamar no WhatsApp</a>
+<a href="tel:1132943230" class="btn btn-outline">Ligar Agora</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col"><h4>Viana & Mota Advogados</h4><p>Sociedade de Advogados especializada em Direito Trabalhista e acidente de trabalho em São Paulo.</p><p>OAB/SP</p></div>
+<div class="footer-col"><h4>Áreas de Atuação</h4><a>Acidente de Trabalho</a><a>Auxílio INSS (B91)</a><a>Estabilidade Acidentária</a><a>Aposentadoria por Invalidez</a><a>Indenização Trabalhista</a></div>
+<div class="footer-col"><h4>Contato</h4><p>&#128222; (11) 3294-3230</p><p>&#128241; (11) 92649-2278</p><p>&#9993; contato@vianaemota.com.br</p><a href="https://www.google.com/maps/place/Av.+Ver.+Jos%C3%A9+Diniz,+3720+-+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+04604-007" target="_blank">&#128205; Av. Vereador José Diniz, 3720, Conj. 905 — São Paulo-SP</a></div>
+</div>
+<div class="footer-bottom">&copy; 2026 Viana & Mota Sociedade de Advogados. Todos os direitos reservados.</div>
+</div>
+</footer>
+
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20sofri%20acidente%20de%20trabalho%20e%20quero%20uma%20consulta" class="wpp-float" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</body>
+</html>
