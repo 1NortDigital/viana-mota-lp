@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advogado de Divórcio em São Paulo | Viana & Mota Advogados</title>
+<meta name="description" content="Divórcio consensual ou litigioso, partilha de bens, guarda e pensão. Atendimento humanizado e ágil em São Paulo. Fale agora com um advogado especialista.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#198fb1;--primary-dark:#14738f;--bg:#ffffff;--bg2:#f5f5f5;--bg3:#efeeee;--text:#404041;--text-light:#666666;--text-muted:#888888;--border:#e0e0e0;--white:#ffffff}
+body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+
+.header{background:var(--white);padding:14px 0;border-top:5px solid var(--primary);border-bottom:1px solid var(--border)}
+.header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.header-logo img{height:95px;display:block}
+.header-info{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--text-muted);flex-wrap:wrap}
+.header-info a{color:var(--primary);text-decoration:none;font-weight:600}
+.header-info a:hover{text-decoration:underline}
+.header-info span{display:flex;align-items:center;gap:4px}
+
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+.hero{background:linear-gradient(135deg,#f8fbfc 0%,#eaf5f8 50%,#f0f8fa 100%);padding:80px 0 70px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,transparent 0%,rgba(25,143,177,0.06) 100%)}
+.hero .container{display:flex;align-items:center;gap:60px}
+.hero-text{flex:1}
+.hero-text .tag{display:inline-block;background:rgba(25,143,177,0.12);color:var(--primary);padding:6px 16px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:20px;letter-spacing:1px;text-transform:uppercase}
+.hero-text h1{font-size:42px;line-height:1.2;color:var(--text);margin-bottom:18px;font-weight:700}
+.hero-text h1 span{color:var(--primary)}
+.hero-text p{font-size:16px;color:var(--text-light);line-height:1.7;margin-bottom:30px;max-width:520px}
+.hero-photo{width:340px;height:420px;border-radius:16px;background:linear-gradient(135deg,#e8f4f8,#d5edf4);border:2px solid rgba(25,143,177,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;overflow:hidden}
+.hero-photo::after{content:'Foto do Advogado';color:var(--text-muted);font-size:14px;font-weight:500}
+.btn{display:inline-block;background:var(--primary);color:var(--white);padding:16px 36px;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:all .3s;border:none;cursor:pointer}
+.btn:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(25,143,177,0.25)}
+.btn-outline{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+.btn-outline:hover{background:var(--primary);color:var(--white)}
+
+.badges{background:var(--primary);padding:50px 0;border:none}
+.badges-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.badge-item{text-align:center;padding:24px 16px}
+.badge-icon{font-size:36px;margin-bottom:12px}
+.badge-item h4{font-size:16px;color:var(--white);margin-bottom:6px;font-weight:700}
+.badge-item p{font-size:13px;color:rgba(255,255,255,0.8);line-height:1.5}
+
+.problemas{padding:80px 0;background:var(--bg2)}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-size:34px;color:var(--text);margin-bottom:12px;font-weight:700}
+.section-title h2 span{color:var(--primary)}
+.section-title p{font-size:16px;color:var(--text-muted);max-width:600px;margin:0 auto}
+.problems-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.problem-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:30px 24px;transition:all .3s}
+.problem-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.problem-card .icon{width:48px;height:48px;background:rgba(25,143,177,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.problem-card h3{font-size:18px;color:var(--text);margin-bottom:10px;font-weight:700}
+.problem-card p{font-size:14px;color:var(--text-light);line-height:1.7}
+
+.numeros{padding:60px 0;background:var(--primary);border:none}
+.numeros-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.numero-item h3{font-size:42px;color:var(--white);font-weight:700;margin-bottom:6px}
+.numero-item p{font-size:14px;color:rgba(255,255,255,0.85);font-weight:600}
+
+.cta-mid{padding:70px 0;background:var(--bg2);text-align:center}
+.cta-mid h2{font-size:30px;color:var(--text);margin-bottom:14px;font-weight:700}
+.cta-mid p{font-size:16px;color:var(--text-light);margin-bottom:28px;max-width:540px;margin-left:auto;margin-right:auto}
+
+.sobre{padding:80px 0;background:var(--white)}
+.sobre .container{display:flex;align-items:center;gap:60px}
+.sobre-photo{width:320px;height:380px;border-radius:12px;background:linear-gradient(135deg,#e8f4f8,#d5edf4);border:2px solid rgba(25,143,177,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sobre-photo::after{content:'Foto da Equipe';color:var(--text-muted);font-size:14px}
+.sobre-text h2{font-size:32px;color:var(--text);margin-bottom:16px;font-weight:700}
+.sobre-text h2 span{color:var(--primary)}
+.sobre-text p{font-size:15px;color:var(--text-light);line-height:1.8;margin-bottom:14px}
+
+.depoimentos{padding:80px 0;background:var(--bg2)}
+.depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.depo-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px 24px}
+.depo-stars{color:#f5a623;font-size:16px;margin-bottom:12px}
+.depo-card p{font-size:14px;color:var(--text-light);line-height:1.7;margin-bottom:16px;font-style:italic}
+.depo-card .nome{font-size:14px;color:var(--text);font-weight:700}
+.depo-card .caso{font-size:12px;color:var(--primary);font-weight:600}
+
+.faq{padding:80px 0;background:var(--white)}
+.faq-list{max-width:740px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border);padding:22px 0}
+.faq-item h4{font-size:17px;color:var(--text);margin-bottom:10px;cursor:pointer;font-weight:700}
+.faq-item p{font-size:14px;color:var(--text-light);line-height:1.7}
+
+.localizacao{padding:80px 0;background:var(--bg2)}
+.localizacao .container{display:flex;gap:50px;align-items:stretch}
+.loc-info{flex:1;display:flex;flex-direction:column;justify-content:center}
+.loc-info h2{font-size:32px;color:var(--text);margin-bottom:24px;font-weight:700}
+.loc-info h2 span{color:var(--primary)}
+.loc-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px}
+.loc-item .loc-icon{width:44px;height:44px;background:rgba(25,143,177,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.loc-item .loc-text p{font-size:15px;color:var(--text-light);line-height:1.6}
+.loc-item .loc-text p strong{color:var(--text);font-weight:700}
+.loc-map{flex:1.2;border-radius:12px;overflow:hidden;border:1px solid var(--border);min-height:380px}
+.loc-map iframe{width:100%;height:100%;min-height:380px;border:0}
+
+.cta-final{padding:80px 0;background:var(--primary);text-align:center;border:none}
+.cta-final h2{font-size:32px;color:var(--white);margin-bottom:14px;font-weight:700}
+.cta-final p{font-size:16px;color:rgba(255,255,255,0.85);margin-bottom:30px;max-width:540px;margin-left:auto;margin-right:auto}
+.cta-final .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cta-final .btn{background:var(--white);color:var(--primary)}
+.cta-final .btn:hover{background:#f0f0f0;color:var(--primary-dark)}
+.cta-final .btn-outline{background:transparent;border:2px solid var(--white);color:var(--white)}
+.cta-final .btn-outline:hover{background:var(--white);color:var(--primary)}
+
+footer{background:#2b2b2b;padding:40px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:30px}
+.footer-col h4{font-size:15px;color:var(--white);margin-bottom:14px;font-weight:700}
+.footer-col p,.footer-col a{font-size:13px;color:#aaaaaa;line-height:2;text-decoration:none;display:block}
+.footer-col a:hover{color:var(--primary)}
+.footer-bottom{text-align:center;border-top:1px solid #444;padding-top:18px;font-size:12px;color:#777}
+
+.wpp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;color:white;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);z-index:999;transition:transform .3s}
+.wpp-float:hover{transform:scale(1.1)}
+
+@media(max-width:900px){
+.hero .container{flex-direction:column;text-align:center}
+.hero-text p{margin:0 auto 30px}
+.hero-photo{width:280px;height:340px}
+.badges-grid{grid-template-columns:repeat(2,1fr)}
+.problems-grid{grid-template-columns:1fr}
+.numeros-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+.sobre .container{flex-direction:column;text-align:center}
+.depo-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.localizacao .container{flex-direction:column}
+.loc-map{min-height:300px}
+.cta-final .btns{flex-direction:column;align-items:center}
+}
+@media(max-width:600px){
+.hero-text h1{font-size:30px}
+.header .container{flex-direction:column;text-align:center}
+.header-info{justify-content:center}
+.numeros-grid{grid-template-columns:1fr 1fr}
+.numero-item h3{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="container">
+<div class="header-logo">
+<img src="../logo-vianaemota.png" alt="Viana & Mota Sociedade de Advogados">
+</div>
+<div class="header-info">
+<span><a href="tel:1132943230">(11) 3294-3230</a></span>
+<span><a href="tel:11926492278">(11) 92649-2278</a></span>
+<span><a href="mailto:contato@vianaemota.com.br">contato@vianaemota.com.br</a></span>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container"><div class="hero-text">
+<span class="tag">Advogado de Divórcio em São Paulo</span>
+<h1>Quer se <span>divorciar</span> com rapidez e sem desgaste?</h1>
+<p>Cuidamos de todo o processo: divórcio consensual ou litigioso, partilha de bens, guarda dos filhos e pensão. Atendimento ágil, sigiloso e humanizado. Receba uma análise gratuita do seu caso agora.</p>
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20quero%20uma%20consulta%20sobre%20div%C3%B3rcio" class="btn">Falar com Advogado Agora</a>
+</div>
+<div class="hero-photo"></div></div>
+</section>
+
+<section class="badges">
+<div class="container"><div class="badges-grid">
+<div class="badge-item"><div class="badge-icon">&#9878;</div><h4>+15 Anos de Experiência</h4><p>Atuação consolidada em Direito de Família</p></div>
+<div class="badge-item"><div class="badge-icon">&#128274;</div><h4>Sigilo Total</h4><p>Sua intimidade tratada com máxima discrição</p></div>
+<div class="badge-item"><div class="badge-icon">&#9203;</div><h4>Processo Ágil</h4><p>Divórcio consensual em até 30 dias</p></div>
+<div class="badge-item"><div class="badge-icon">&#128373;</div><h4>Atendimento Humanizado</h4><p>Sem julgamentos. Foco em resolver com o menor desgaste</p></div>
+</div></div>
+</section>
+
+<section class="problemas">
+<div class="container">
+<div class="section-title">
+<h2>Como podemos <span>te ajudar?</span></h2>
+<p>Cuidamos de todas as etapas do divórcio para que você possa fechar esse ciclo com segurança jurídica e tranquilidade.</p>
+</div>
+<div class="problems-grid">
+<div class="problem-card"><div class="icon">&#128221;</div><h3>Divórcio Consensual</h3><p>Quando há acordo entre as partes, o divórcio pode ser feito em cartório ou no judiciário em poucas semanas, sem audiências longas.</p></div>
+<div class="problem-card"><div class="icon">&#9876;</div><h3>Divórcio Litigioso</h3><p>Sem acordo? Atuamos firmemente para proteger seu patrimônio, seu nome e o melhor interesse dos seus filhos no processo.</p></div>
+<div class="problem-card"><div class="icon">&#127968;</div><h3>Partilha de Bens</h3><p>Imóveis, veículos, empresas, investimentos e dívidas. Garantimos a divisão justa conforme o regime de bens do casamento.</p></div>
+<div class="problem-card"><div class="icon">&#128118;</div><h3>Guarda dos Filhos</h3><p>Guarda compartilhada ou unilateral, regulamentação de visitas e estabelecimento de pensão alimentícia para os filhos.</p></div>
+<div class="problem-card"><div class="icon">&#128181;</div><h3>Pensão e Alimentos</h3><p>Definição, revisão ou exoneração de pensão alimentícia entre cônjuges e para os filhos.</p></div>
+<div class="problem-card"><div class="icon">&#128737;</div><h3>Medidas Protetivas</h3><p>Casos de violência doméstica: ação imediata para sua proteção e da sua família, com encaminhamento à autoridade competente.</p></div>
+</div>
+</div>
+</section>
+
+<section class="numeros">
+<div class="container"><div class="numeros-grid">
+<div class="numero-item"><h3>+2.000</h3><p>Casos Atendidos</p></div>
+<div class="numero-item"><h3>30 dias</h3><p>Divórcio Consensual</p></div>
+<div class="numero-item"><h3>+15</h3><p>Anos de Atuação</p></div>
+<div class="numero-item"><h3>100%</h3><p>Sigilo Profissional</p></div>
+</div></div>
+</section>
+
+<section class="cta-mid">
+<h2>Não deixe esse ciclo aberto.</h2>
+<p>Quanto antes começar, mais rápido você fecha esse capítulo. Conte com quem já guiou +2.000 famílias com discrição e eficiência.</p>
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20quero%20uma%20consulta%20sobre%20div%C3%B3rcio" class="btn">Consulta Gratuita pelo WhatsApp</a>
+</section>
+
+<section class="sobre">
+<div class="container">
+<div class="sobre-photo"></div>
+<div class="sobre-text">
+<h2>Sobre a <span>Viana & Mota</span></h2>
+<p>A Viana & Mota Sociedade de Advogados é um escritório consolidado em São Paulo, com atuação destacada em Direito de Família — divórcio, guarda, pensão e partilha.</p>
+<p>Sabemos que o divórcio é um momento delicado. Por isso, atuamos com escuta ativa, total sigilo e foco em resolver com o menor desgaste emocional e financeiro possível.</p>
+<p>Nossa abordagem combina técnica jurídica de excelência com atendimento humanizado: você conversa diretamente com um advogado, sem intermediários e sem termos jurídicos confusos.</p>
+</div>
+</div>
+</section>
+
+<section class="depoimentos">
+<div class="container">
+<div class="section-title">
+<h2>O que nossos <span>clientes dizem</span></h2>
+<p>A confiança de quem nos procurou em um dos momentos mais difíceis</p>
+</div>
+<div class="depo-grid">
+<div class="depo-card"><div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Tinha medo do processo ser longo e doloroso. Em 3 semanas estávamos divorciados, com a partilha resolvida. Atendimento extremamente atencioso."</p><div class="nome">Rafael C.</div><div class="caso">Divórcio Consensual</div></div>
+<div class="depo-card"><div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Briga difícil pela guarda do meu filho. Conseguiram guarda compartilhada e um acordo justo de pensão. Defenderam meu lado sem deixar virar guerra."</p><div class="nome">Bruno T.</div><div class="caso">Guarda e Pensão</div></div>
+<div class="depo-card"><div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Patrimônio complexo, com imóveis e empresa. Cuidaram da partilha sem perder tempo e protegeram o que era de direito. Recomendo."</p><div class="nome">Eduardo M.</div><div class="caso">Partilha de Bens</div></div>
+</div>
+</div>
+</section>
+
+<section class="localizacao">
+<div class="container">
+<div class="loc-info">
+<h2>Nossa <span>Localização</span></h2>
+<div class="loc-item"><div class="loc-icon">&#128205;</div><div class="loc-text"><p><strong>Endereço</strong><br><a href="https://www.google.com/maps/place/Av.+Ver.+Jos%C3%A9+Diniz,+3720+-+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+04604-007" target="_blank" style="color:var(--primary);text-decoration:none;display:inline">Av. Vereador José Diniz, 3720, Conj. 905<br>São Paulo-SP | CEP 04604-007</a></p></div></div>
+<div class="loc-item"><div class="loc-icon">&#128222;</div><div class="loc-text"><p><strong>Telefone</strong><br><a href="tel:1132943230" style="color:var(--primary);text-decoration:none;display:inline">(11) 3294-3230</a></p></div></div>
+<div class="loc-item"><div class="loc-icon">&#128241;</div><div class="loc-text"><p><strong>Celular</strong><br><a href="tel:11926492278" style="color:var(--primary);text-decoration:none;display:inline">(11) 92649-2278</a></p></div></div>
+<div class="loc-item"><div class="loc-icon">&#9993;</div><div class="loc-text"><p><strong>E-mail</strong><br><a href="mailto:contato@vianaemota.com.br" style="color:var(--primary);text-decoration:none;display:inline">contato@vianaemota.com.br</a></p></div></div>
+</div>
+<div class="loc-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.674921361813!2d-46.67553308538256!3d-23.615988769496152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50a1038509bd%3A0x6f668087d411e354!2sAv.%20Ver.%20Jos%C3%A9%20Diniz%2C%203720%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004604-007!5e0!3m2!1spt-BR!2sbr!4v1567190784645!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe></div>
+</div>
+</section>
+
+<section class="faq">
+<div class="container">
+<div class="section-title"><h2>Perguntas <span>Frequentes</span></h2></div>
+<div class="faq-list">
+<div class="faq-item"><h4>Quanto custa um processo de divórcio?</h4><p>Depende do tipo (consensual ou litigioso) e da complexidade da partilha. Na primeira conversa fazemos uma análise gratuita e apresentamos o orçamento de forma transparente.</p></div>
+<div class="faq-item"><h4>Quanto tempo demora?</h4><p>Divórcio consensual sem filhos menores: pode ser feito em cartório em poucos dias. Com filhos menores ou litigioso: de 1 a 12 meses, dependendo do caso.</p></div>
+<div class="faq-item"><h4>Preciso estar de acordo com meu cônjuge?</h4><p>Não. Mesmo sem acordo, é possível pedir o divórcio. A partilha, guarda e pensão podem ser discutidas posteriormente, sem impedir o divórcio em si.</p></div>
+<div class="faq-item"><h4>Como funciona a partilha de bens?</h4><p>Depende do regime de bens do casamento (comunhão parcial, universal, separação total etc.). Avaliamos seu caso, identificamos o que entra na partilha e protegemos seu patrimônio.</p></div>
+<div class="faq-item"><h4>E a guarda dos filhos?</h4><p>A regra é guarda compartilhada, com definição de residência principal. Cuidamos também de regulamentação de visitas e pensão alimentícia para os filhos.</p></div>
+<div class="faq-item"><h4>Vocês atendem online?</h4><p>Sim. Atendimento presencial em Santo Amaro (SP) e online para todo o Brasil. Todo o processo pode ser conduzido remotamente, com total segurança.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta-final">
+<h2>Vamos resolver isso juntos.</h2>
+<p>Receba uma análise gratuita e sigilosa do seu caso com um advogado especialista em Direito de Família.</p>
+<div class="btns">
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20quero%20uma%20consulta%20sobre%20div%C3%B3rcio" class="btn">Chamar no WhatsApp</a>
+<a href="tel:1132943230" class="btn btn-outline">Ligar Agora</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col"><h4>Viana & Mota Advogados</h4><p>Sociedade de Advogados em São Paulo, com atuação em Direito de Família e Trabalhista.</p><p>OAB/SP</p></div>
+<div class="footer-col"><h4>Áreas de Atuação</h4><a>Divórcio Consensual</a><a>Divórcio Litigioso</a><a>Partilha de Bens</a><a>Guarda dos Filhos</a><a>Pensão Alimentícia</a></div>
+<div class="footer-col"><h4>Contato</h4><p>&#128222; (11) 3294-3230</p><p>&#128241; (11) 92649-2278</p><p>&#9993; contato@vianaemota.com.br</p><a href="https://www.google.com/maps/place/Av.+Ver.+Jos%C3%A9+Diniz,+3720+-+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+04604-007" target="_blank">&#128205; Av. Vereador José Diniz, 3720, Conj. 905 — São Paulo-SP</a></div>
+</div>
+<div class="footer-bottom">&copy; 2026 Viana & Mota Sociedade de Advogados. Todos os direitos reservados.</div>
+</div>
+</footer>
+
+<a href="https://wa.me/5511926492278?text=Ol%C3%A1%2C%20quero%20uma%20consulta%20sobre%20div%C3%B3rcio" class="wpp-float" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</body>
+</html>
